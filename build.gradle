@@ -1,0 +1,5 @@
+group 'com.kodcu.sdm'
+version '1.0'
+apply plugin: 'java'
+sourceCompatibility = 1.8
+

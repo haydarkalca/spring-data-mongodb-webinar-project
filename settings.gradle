@@ -1,0 +1,3 @@
+rootProject.name = 'spring-data-mongodb-demo-project'
+include 'spring-data-examples'
+include 'spring-data-repo-examples'

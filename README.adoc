@@ -1,0 +1,15 @@
+= Spring Data MongoDB Webiner Projesi
+
+10 Haziran 2015 tarihinde yapılan Spring Data MongoDB Webinerine ait proje. Sunum ve örnek koleksiyon (`tweets.zip`) da projede mevcuttur.
+
+== Çalıştırma İşlemi
+
+. Eğer MongoDB makineninzde yüklü değilse direkt sitesinden https://mongodb.org/[yükleyin].
+
+. MongoDB sisteminize kurulduktan sonra çalışan bir sunucu tarafına ayrı bir terminalden şu komutu çalıştırarak örnek koleksiyonu sunucuya ekleyin:
++
+    $ mongorestore dump
++
+Bu komut direkt localhost:27017 bağlantısında ayakta olan bir mongod sunucusuna koleksiyonu aktarıcak. Bu işlemden önce tweets.zip dosyasını açmanız gerekmekte ve çıkan klasör `dump` isminde olacaktır. Onu terminalde yukarıdaki gibi belirtmeniz yeterlidir. MongoDB tarafına veritabanı ismi "twitter", koleksiyon ismi "tweets" olarak bu örnek dokümanlar kaydedilecekler.
+
+. Projeyi derlemeniz için : `./gradlew build`, çalıştırmanız için de: `./gradlew run` komutlarını kullanmanız yeterlidir.

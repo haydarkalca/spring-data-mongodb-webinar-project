@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'application'
+mainClassName = 'com.kodcu.mongodb.spring.MongoApp'
+compileJava.options.encoding = 'UTF-8'
+
+dependencies {
+    compile 'org.springframework.data:spring-data-mongodb:1.7.0.RELEASE'
+}
+
+repositories {
+    mavenCentral()
+}
+
